@@ -1,0 +1,44 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: background .5s ease; }
+
+.mode {
+  width: 70px;
+  height: 35px;
+  background-color: #111111;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  transform: scale(1.2);
+  transition: background .5s ease; }
+  .mode .moon {
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/moon.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .mode .sun {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/sun.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .mode .ball {
+    border-radius: 50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    transition: all 0.5s ease; }
